@@ -1,0 +1,22 @@
+# Core DSP — the graded part
+numpy>=1.26
+scipy>=1.11
+
+# Capture and ROI
+opencv-python>=4.8
+mediapipe>=0.10.14        # Tasks API. 1.0 removed the legacy mp.solutions API.
+
+# Methods, tables, figures
+scikit-learn>=1.3         # FastICA
+pandas>=2.0
+matplotlib>=3.7
+
+# Demo app
+streamlit>=1.30
+
+# Tests
+pytest>=7.4
+
+# Deliberately absent: torch, tensorflow. The course is DSP, the classical
+# methods have interpretable mechanisms, and a model trained on UBFC-rPPG and
+# tested on UBFC-rPPG would prove nothing.
